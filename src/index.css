@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a5310c;
+}
+
+.beanlogo {
+  width: 92px;
+  height: 92px;
+}
