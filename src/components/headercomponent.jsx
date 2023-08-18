@@ -2,12 +2,7 @@ export default function Header() {
   return (
     <>
       <header style={headerStyle}>
-        <img
-          className="beanlogo"
-          src="src/assets/beanlogo.png"
-          alt=""
-          srcset=""
-        />
+        <img className="beanlogo" src="src/assets/beanlogo.png" />
         <h1>.magic bean</h1>
       </header>
       <main style={mainStyle}>

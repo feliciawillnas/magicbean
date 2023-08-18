@@ -6,8 +6,12 @@ export default function ReadMoreButton() {
   );
 }
 
-function addToCartButton() {
-  return <button>Add to cart</button>;
+function AddToCartButton() {
+  return (
+    <>
+      <button style={addToCartButton}>Add to cart</button>
+    </>
+  );
 }
 
 const readMoreButton = {
@@ -17,5 +21,18 @@ const readMoreButton = {
   padding: "0.6rem",
   borderRadius: "50px",
   border: "none",
-  fontSize: "2rem",
+  fontSize: "2.5rem",
 };
+
+const addToCartButton = {
+  backgroundColor: "black",
+  fontFamily: "Lacquer",
+  color: "#A54E0C",
+  padding: "0.2rem",
+  borderRadius: "50px",
+  border: "none",
+  fontSize: "1.2rem",
+  width: "100%",
+};
+
+export { ReadMoreButton, AddToCartButton };

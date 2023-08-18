@@ -1,11 +1,12 @@
 import ReadMoreButton from "./button";
+import Card from "./card";
 
-export default function InformationSection() {
+function InformationSection() {
   return (
     <>
       <section style={sectionStyle}>
         <div style={divStyleLeft}>
-          <h2>from bean to cup</h2>
+          <h2 style={informationSectionh2}>from bean to cup</h2>
           <p style={pStyle}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
             facere modi ex sint, praesentium laborum nobis quia repellat nemo ut
@@ -29,24 +30,52 @@ const sectionStyle = {
   fontFamily: "Reenie Beanie",
   padding: "1rem",
   marginTop: "2.5rem",
+  justifyContent: "space-around",
+  marginBottom: "3rem",
+};
+
+const informationSectionh2 = {
+  fontSize: "4rem",
+  marginBottom: "0.5rem",
 };
 
 const divStyleLeft = {
-  flex: 1,
   paddingRight: "1rem",
   fontSize: "30px",
+  width: "45%",
 };
 
 const pStyle = {
   marginBottom: "1.5rem",
+  fontSize: "2rem",
 };
 
-const divStyleRight = {
-  flex: 1,
-};
+const divStyleRight = {};
 
 const imgStyle = {
-  width: "100%",
-  height: "auto",
+  height: "400px",
+  width: "600px",
+  objectFit: "cover",
   borderRadius: "5%",
+};
+
+function Products() {
+  return (
+    <>
+      <div style={cardSectionStyle}>
+        <Card title="Yellow" imageSrc="/src/assets/coffeebag.png" />
+        <Card title="Green" imageSrc="/src/assets/coffeebaggreen.png" />
+        <Card title="Purple" imageSrc="/src/assets/coffeebagpurple.png" />
+      </div>
+    </>
+  );
+}
+
+export { InformationSection, Products };
+
+const cardSectionStyle = {
+  backgroundColor: "#A54E0C",
+  display: "flex",
+  justifyContent: "space-around",
+  padding: "1rem",
 };
