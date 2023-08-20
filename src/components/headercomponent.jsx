@@ -56,7 +56,7 @@ export default function Header() {
   return (
     <>
       <header style={headerStyle}>
-        <img style={styledLogoImg} src="src/assets/logo3.png" alt="Logo" />
+        <img style={styledLogoImg} src="/src/assets/logo3.png" alt="Logo" />
         {isMobile && (
           <i style={hamburgerStyle} className="fa-solid fa-bars"></i>
         )}
