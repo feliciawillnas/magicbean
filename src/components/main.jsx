@@ -73,22 +73,51 @@ const imgStyle = {
 };
 
 function Products() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div style={cardSectionStyle}>
-        <Card title="Yellow" imageSrc="/src/assets/coffeebagnatural.png" />
-        <Card title="Green" imageSrc="/src/assets/coffeebagnatural.png" />
-        <Card title="Purple" imageSrc="/src/assets/coffeebagnatural.png" />
+        {isMobile ? (
+          <div style={stackedCardStyle}>
+            <Card title="Yellow" imageSrc="/src/assets/coffeebagnatural.png" />
+            <Card title="Green" imageSrc="/src/assets/coffeebaggreen.png" />
+            <Card title="Blue" imageSrc="/src/assets/coffeebagblue.png" />
+          </div>
+        ) : (
+          <>
+            <Card title="Yellow" imageSrc="/src/assets/coffeebagnatural.png" />
+            <Card title="Green" imageSrc="/src/assets/coffeebaggreen.png" />
+            <Card title="Blue" imageSrc="/src/assets/coffeebagblue.png" />
+          </>
+        )}
       </div>
     </>
   );
 }
-
 const cardSectionStyle = {
   backgroundColor: "#A54E0C",
   display: "flex",
   justifyContent: "space-around",
   padding: "1rem",
+};
+
+const stackedCardStyle = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
 };
 
 export { InformationSection, Products };

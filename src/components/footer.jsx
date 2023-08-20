@@ -28,6 +28,8 @@ const leftFooter = {
 };
 
 const logoStyle = {
-  height: "100px",
+  height: "auto",
+  width: "18%",
   marginRight: "1rem",
+  objectFit: "contain",
 };
