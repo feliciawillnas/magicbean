@@ -63,15 +63,13 @@ function Products() {
   return (
     <>
       <div style={cardSectionStyle}>
-        <Card title="Yellow" imageSrc="/src/assets/coffeebag.png" />
-        <Card title="Green" imageSrc="/src/assets/coffeebaggreen.png" />
-        <Card title="Purple" imageSrc="/src/assets/coffeebagpurple.png" />
+        <Card title="Yellow" imageSrc="/src/assets/coffeebagnatural.png" />
+        <Card title="Green" imageSrc="/src/assets/coffeebagnatural.png" />
+        <Card title="Purple" imageSrc="/src/assets/coffeebagnatural.png" />
       </div>
     </>
   );
 }
-
-export { InformationSection, Products };
 
 const cardSectionStyle = {
   backgroundColor: "#A54E0C",
@@ -79,3 +77,5 @@ const cardSectionStyle = {
   justifyContent: "space-around",
   padding: "1rem",
 };
+
+export { InformationSection, Products };

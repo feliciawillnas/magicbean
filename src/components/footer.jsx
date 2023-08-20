@@ -6,7 +6,7 @@ export default function Footer() {
           <img style={logoStyle} src="/src/assets/beanlogo.png" alt="" />
           <div>
             <h2>phone +237 23 43 93</h2>
-            <h2>visit us @ magic st 342 12</h2>
+            <h2>visit us at greenery st 342 12</h2>
           </div>
         </div>
       </footer>

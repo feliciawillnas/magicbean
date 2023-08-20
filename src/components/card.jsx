@@ -27,8 +27,8 @@ const cardh2 = {
 
 const cardImg = {
   width: "100%",
-  height: "400px",
-  objectFit: "cover",
+  height: "300px",
+  objectFit: "contain",
 };
 
 export default Card;
