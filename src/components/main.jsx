@@ -17,7 +17,7 @@ function InformationSection() {
           <ReadMoreButton />
         </div>
         <div style={divStyleRight}>
-          <img style={imgStyle} src="src/assets/coffeeplant2.jpeg" alt="" />
+          <img style={imgStyle} src="src/assets/coffeeplant3.png" alt="" />
         </div>
       </section>
     </>

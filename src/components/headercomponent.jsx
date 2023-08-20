@@ -2,8 +2,8 @@ export default function Header() {
   return (
     <>
       <header style={headerStyle}>
-        <img className="beanlogo" src="src/assets/beanlogo.png" />
-        <h1>.magic bean</h1>
+        <img style={styledLogo} src="src/assets/logo3.png" />
+        {/* classname beanlogo på img ovan */}
       </header>
       <main style={mainStyle}>
         <ul style={ulStyle}>
@@ -24,6 +24,10 @@ const headerStyle = {
   marginBottom: "1rem",
   alignItems: "center",
   padding: "0.5rem",
+};
+
+const styledLogo = {
+  height: "100px",
 };
 
 const mainStyle = {
