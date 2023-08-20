@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import ReadMoreButton from "./button";
 import Card from "./card";
 
+/*test */
+
 function InformationSection() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
