@@ -34,7 +34,7 @@ function InformationSection() {
       </div>
       <div>
         {isMobile ? null : (
-          <img style={imgStyle} src="src/assets/coffeeplant3.jpg" alt="" />
+          <img style={imgStyle} src="/assets/coffeeplant3.jpg" alt="" />
         )}
       </div>
     </section>
@@ -94,15 +94,18 @@ function Products() {
       <div style={cardSectionStyle}>
         {isMobile ? (
           <div style={stackedCardStyle}>
-            <Card title="Yellow" imageSrc="/src/assets/coffeebagnatural.png" />
-            <Card title="Green" imageSrc="/src/assets/coffeebaggreen.png" />
-            <Card title="Blue" imageSrc="/src/assets/coffeebagblue.png" />
+            <Card
+              title="Yellow"
+              imageSrc="public/assets/coffeebagnatural.png"
+            />
+            <Card title="Green" imageSrc="/assets/coffeebaggreen.png" />
+            <Card title="Blue" imageSrc="/assets/coffeebagblue.png" />
           </div>
         ) : (
           <>
-            <Card title="Yellow" imageSrc="/src/assets/coffeebagnatural.png" />
-            <Card title="Green" imageSrc="/src/assets/coffeebaggreen.png" />
-            <Card title="Blue" imageSrc="/src/assets/coffeebagblue.png" />
+            <Card title="Yellow" imageSrc="/assets/coffeebagnatural.png" />
+            <Card title="Green" imageSrc="/assets/coffeebaggreen.png" />
+            <Card title="Blue" imageSrc="/assets/coffeebagblue.png" />
           </>
         )}
       </div>
