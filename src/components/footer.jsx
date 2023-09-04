@@ -3,7 +3,7 @@ export default function Footer() {
     <>
       <footer style={footerStyle}>
         <div style={leftFooter}>
-          <img style={logoStyle} src="/src/assets/beanlogo.png" alt="" />
+          <img style={logoStyle} src="/assets/beanlogo.png" alt="" />
           <div>
             <h2>phone +237 23 43 93</h2>
             <h2>visit us at greenery st 342 12</h2>

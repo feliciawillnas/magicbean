@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 export default function Header() {
+  {
+    /** HAMBUGER USE EFFECT */
+  }
   const [isMobile, setIsMobile] = useState(false);
   const [showNav] = useState(false);
 

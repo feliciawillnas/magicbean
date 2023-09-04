@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import ReadMoreButton from "./button";
 import Card from "./card";
 
-/*test */
+{
+  /** HERO SECTION */
+}
 
 function InformationSection() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -74,6 +76,10 @@ const imgStyle = {
   borderRadius: "5%",
 };
 
+{
+  /** PRODUCTS SECTION */
+}
+
 function Products() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -94,10 +100,7 @@ function Products() {
       <div style={cardSectionStyle}>
         {isMobile ? (
           <div style={stackedCardStyle}>
-            <Card
-              title="Yellow"
-              imageSrc="public/assets/coffeebagnatural.png"
-            />
+            <Card title="Yellow" imageSrc="/assets/coffeebagnatural.png" />
             <Card title="Green" imageSrc="/assets/coffeebaggreen.png" />
             <Card title="Blue" imageSrc="/assets/coffeebagblue.png" />
           </div>
